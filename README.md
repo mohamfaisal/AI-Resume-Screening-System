@@ -1,7 +1,6 @@
 # 🧠 HireMind.ai
 
 ![HireMind AI Dashboard](./dashboard.png)
-*(Drop your screenshot in the root folder and name it `dashboard.png`)*
 
 **AI-Powered Hiring Intelligence Engineered for UAE Enterprises.**
 
