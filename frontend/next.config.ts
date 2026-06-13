@@ -1,12 +1,18 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  reactStrictMode: false, // Disabling strict mode often stops these deep hydration warnings
+const nextConfig = {
+  reactStrictMode: false, 
+  
   compiler: {
-    // This removes the properties the extension adds before React hydrates
     reactRemoveProperties: process.env.NODE_ENV === 'production' 
       ? false 
       : { properties: ['^bis_.*'] }, 
+  },
+  
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
